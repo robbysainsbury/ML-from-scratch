@@ -9,10 +9,11 @@ class LinearRegression:
         self.weights = None
         self.bias = None
 
+
     def fit(self, X, y):
         #initializing
         n_samples, n_features = X.shape
-        self.weights = np.zeroes(n_features)
+        self.weights = np.zeros(n_features)
         self.bias = 0
 
         #gradient descent 
